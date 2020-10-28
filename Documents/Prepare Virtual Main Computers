@@ -1,0 +1,40 @@
+# Prepare Virtual Main Computers #
+
+
+When using the Apache web server, you can use hosts (similar to server blocks in Nginx) to encapsulate their dense details multiple times and host them on a single server in a virtual server.
+
+I've created as fatihkelesoglu domain name.You can follow the screenshots about the part and then you can create and check own domain name.
+
+
+
+sudo mkdir -p /var/www/fatihkelesoglu.com/public_html
+
+sudo chown -R www-data: /var/www/fatihkelesoglu.com
+
+sudo chmod -R 755 /var/www/fatihkelesoglu.com
+
+nano /var/www/fatihkelesoglu.com/public_html/index.html
+
+sudo nano /etc/apache2/sites-available/fatihkelesoglu.com.conf
+
+sudo a2ensite fatihkelesoglu.com
+
+sudo ln -s /etc/apache2/sites-available/fatihkelesoglu.conf /etc/apache2/sites-enabled/
+
+sudo a2dissite 000-default.conf
+
+sudo apache2ctl configtest
+
+
+If you see "Syntax OK" output,everything has been completed.just restart apache2 and then you can try.
+
+sudo systemctl restart apache2
+
+
+You can go to website line and you can check your domain name.
+
+
+Important Notice : If you see a error message like "apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1. Set the 'ServerName' directive globally to suppress this message"
+
+You need to make basic step.I've added some screenshots about the problem.If you open img11 and img12 screenshots,you will see solution about the problem.
+

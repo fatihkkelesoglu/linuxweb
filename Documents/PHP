@@ -1,0 +1,61 @@
+# Installing PHP #
+
+PHP is the component of your installation that will process code to display dynamic content. It can run scripts, connect to your MySQL databases to extract information, and the processed content can be delivered to your web server to view.
+
+Once again we will use the apt system to install PHP. Also, this time we will install some helper packages so that the PHP code can run under Apache server and communicate with your MySQL database ;
+
+
+sudo apt install php libapache2-mod-php php-mysql 
+
+
+This command should install PHP and utilities without any problems. We'll test this in a moment.
+
+Currently, when a user requests a directory from our server, Apache first looks for a file named index.html for the directory. However, we will mainly use PHP files on our server. So we need to tell our web server to prefer HTML files if PHP files are not available.
+
+To do this, type the following command to open the dir.conf file in a text editor with root privileges ;
+
+
+sudo nano /etc/apache2/mods-enabled/dir.conf
+
+
+After this code,you have to see a space about that ;
+
+
+<IfModule mod_dir.c>
+        DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+</IfModule>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+
+---------------------------------------------------------------
+
+<IfModule mod_dir.c>
+        DirectoryIndex index.php index.html index.cgi index.pl index.xhtml index.htm
+</IfModule>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
+
+
+Notice : You have to change bottom with upper like this.
+
+And then CTRL + X / CTRL + O / Y / Enter
+
+
+sudo systemctl restart apache2
+
+sydo systemctl status apache2
+
+
+You will always have the option to install some additional modules to increase the functionality of PHP. To see the available options for PHP modules ;
+
+
+apt search php- | less
+
+
+PHP processes has been completed.After the process you should prepare virtual main computer.
+
+
+
+
+
+
