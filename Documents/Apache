@@ -1,0 +1,71 @@
+# Installing Apache and Updating Windows Firewall # 
+
+# Installing Apache #
+
+Apache Web Servers are most popular web servers application in the world.Uses in most of the web as well most common.
+It is a great choice for hosting a website.
+
+
+Firstly,you have to use packets administrator with apt on Linux.
+And then you can setup Apache and ufw.
+
+
+Apache Installing Codes ;
+
+
+sudo apt update
+sudo apt-get upgrade 
+sudo apt install apache2 
+sudo apt install ufw 
+sudo ufw allow OpenSSH
+sudo ufw enable
+
+
+Since we are using the sudo command, perform these operations with roots.Also.If you get some questions about Apache as Y/N while Apache install,you can enter answer Y (Yes) for all the process.
+
+----------------------------------------------------------------
+
+# Updating Windows Firewall #
+
+Next, assuming you have your UFW wall firewall enabled, make sure your firewall allows HTTP and HTTPS traffic. You can check if the UFW has an application profile for Apache as follows:
+
+
+sudo ufw app list
+
+
+Available applications:
+  Apache
+  Apache Full
+  Apache Secure
+  OpenSSH
+
+
+Look at the Apache Full profile with the command below, you should see that ufw is providing traffic to ports 80 and 443 :
+
+
+sudo ufw app info "Apache Full"
+
+
+Profile: Apache Full
+Title: Web Server (HTTP,HTTPS)
+Description: Apache v2 is the next generation of the omnipresent Apache web
+server.
+
+Ports:
+  80,443/tcp
+
+
+If you see your ports : 80,433/tcp , you can continue the process.
+
+
+If you don't see your ports numbers like 80,433 or you see some
+different ports.You can go to the codes and you can check or create new one.
+
+
+sudo ufw allow in "Apache Full"
+
+
+Finally,everything has been completed.You need to learn your pc's ip address and then you can put your ip address on the search line.If you success for all process,you must see "Apache 2 Ubuntu Default Page "
+When the page is open,it works.Congra!
+
+

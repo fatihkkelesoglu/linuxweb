@@ -8,9 +8,9 @@ I will use Ubuntu 18.04 LTS system for the project.
 
 Pre-Requitments
 
-*root or who has root authority a user
-*basic firewall
-*Ubuntu 18.04 server
+- root or who has root authority a user
+- basic firewall
+- Ubuntu 18.04 server
 
 
 
