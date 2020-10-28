@@ -14,7 +14,7 @@ Pre-Requitments
 
 
 
-1-Installing Apache and Updateding Windows Firewall
+1-Installing Apache and Updating Windows Firewall
 
 2-Installing MySQL
 
@@ -23,3 +23,5 @@ Pre-Requitments
 4-Prepare Virtual Main Computers
 
 5-Testing PHP on Web Server
+
+6-How to Install FFMpeg 3.x/4.x
