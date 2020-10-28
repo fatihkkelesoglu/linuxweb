@@ -14,7 +14,7 @@ Pre-Requitments
 
 
 
-1-Installing Apache and Updateding Windows Firewall
+1-Installing Apache and Updating Windows Firewall
 
 2-Installing MySQL
 
