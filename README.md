@@ -15,3 +15,11 @@ Pre-Requitments
 
 
 1-Installing Apache and Updateding Windows Firewall
+
+2-Installing MySQL
+
+3-Installing PHP
+
+4-Prepare Virtual Main Computers
+
+5-Testing PHP on Web Server

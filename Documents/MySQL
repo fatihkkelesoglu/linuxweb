@@ -1,0 +1,49 @@
+# Installing MySQL #
+
+Now your web server is up and running, it's time to install MySQL. MySQL is a database management system. Basically, it organizes and provides access to databases where your site can store information.
+
+Again, use apt to get and install this software ; 
+
+
+sudo apt install mysql-server
+
+
+The next step for new MySQL installations is to run the included security script. This script changes some of the less safe default options. We will use it to block remote root logins and remove unused database users.
+
+run the security script ;
+
+
+sudo mysql_secure_installation
+
+
+This script takes you to a series of prompts where you can make some changes to your MySQL installation.
+
+The following screen will welcome you ;
+
+After this section, different screens will meet you and you will need to do some operations. You can follow this section with screenshots.
+
+
+You will be asked to set a password. Specify a long password containing an uppercase letter, a number, a lowercase letter and a special symbol and re-enter the same.
+
+
+These following prompts will remove anonymous users and the test database, disable remote root login, and install these new rules into the software so that MySQL immediately complies with the changes you make.
+
+
+Note that you do not need to enter a password to log in as root user. This is used instead of unix_socket for your password, which is the default authentication method for the administrative MySQL user. While this may seem like a security issue at first, it actually makes the database server more secure, because the users allowed to log in as root MySQL users are already system users with sudo privileges. In short, they are the same privileges: slight_smile: Practically speaking, it means that you cannot use the administrator database root user to connect from your PHP application.
+
+----------------------------------------------------------------
+
+sudo mysql
+
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Password2020*-';
+
+FLUSH PRIVILEGES;
+
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+
+exit
+
+
+
