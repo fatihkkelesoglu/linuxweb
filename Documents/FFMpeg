@@ -1,0 +1,34 @@
+# How to Install FFMpeg 3.x/4.x #
+
+
+FFmpeg is a free and open scripting tool for encoding multimedia. It includes a number of shared audio and video libraries such as libavcodec, libavformat, and libavutil. With FFmpeg, you can switch between various video and audio formats, set sample rates, and resize videos.
+
+
+sudo apt update
+
+sudo apt install ffmpeg
+
+ffmpeg -version
+
+
+
+To view all available FFmpeg's encoders and decoders, type ;
+
+
+ffmpeg -encoders
+
+ffmpeg -decoders
+
+
+FFmpeg version 4.x comes with a number of new filters, encoders, and decoders. The easiest way to install is by using the snappy packaging system. Open your terminal again and install the FFmpeg extension package by typing the following ;
+
+
+sudo snap install ffmpeg
+
+ffmpeg -version
+
+
+So much! FFmpeg is installed on your system and ready to use.
+
+
+
