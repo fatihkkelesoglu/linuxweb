@@ -1,0 +1,48 @@
+# How to Install Docker #
+
+
+#As always, first, update and upgrade your APT.
+
+sudo apt update
+
+sudo apt upgrade
+
+
+#Enter the following command to download and install the Docker package.
+
+
+sudo apt install docker.io
+
+
+#Start Docker and enter the following command to enable it after every time the system reboots.
+
+
+sudo systemctl enable --now docker
+
+
+#To disable it again, simply type in the following command.
+
+
+sudo systemctl disable --now docker
+
+
+#This step will show you how to give privileges to any user with Docker. You can replace “fatih” with the user account you are giving permission.
+
+
+sudo usermod -aG docker fatih
+
+
+#You can check the version of Docker with the following command.
+
+
+docker --version
+
+
+#Test Docker by running the following command, which will open a container to run the Hello World command.
+
+
+docker run hello-world
+
+
+Docker is a very useful tool for working with third-party software tools, as it establishes well-defined and secure channels for communication. Because it is so useful, Docker is becoming more popular day by day.
+
