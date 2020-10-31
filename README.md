@@ -10,7 +10,7 @@ Pre-Requitments
 
 - root or who has root authority a user
 - basic firewall
-- Ubuntu 18.04 server / Ubuntu 20.04 server
+- Ubuntu 18.04 OS / Ubuntu 20.04 OS
 
 
 
@@ -25,3 +25,5 @@ Pre-Requitments
 5-Testing PHP on Web Server (Ubuntu 18.04)
 
 6-How to Install FFMpeg 3.x/4.x (Ubuntu 18.04)
+
+7-How to Install Docker (Ubuntu 20.04)
