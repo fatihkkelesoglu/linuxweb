@@ -35,7 +35,7 @@ sudo usermod -aG docker fatih
 #You can check the version of Docker with the following command.
 
 
-docker --version
+docker version
 
 
 #Test Docker by running the following command, which will open a container to run the Hello World command.
