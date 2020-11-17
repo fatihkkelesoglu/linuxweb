@@ -27,3 +27,5 @@ Pre-Requitments
 6-How to Install FFMpeg 3.x/4.x (Ubuntu 18.04)
 
 7-How to Install Docker (Ubuntu 20.04)
+
+8-How to Fix Screen Resolution (Ubuntu 20.04)

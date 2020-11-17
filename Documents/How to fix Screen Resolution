@@ -1,0 +1,23 @@
+# How to fix Screen Resolution Problem on Ubuntu 20.04 #
+
+
+Firstly you have to use sudo mode before the commands;
+
+sudo xrandr
+
+
+I choosed 1920x1080 as a new resolution ;
+
+
+cvt 1920 1080
+
+
+sudo xrandr --newmod "1920x1080_60.00"  173.00  1920 2048 2248 2576  1080 1083 1088 1120 -hsync +vsync
+
+
+
+sudo xrandr --addmode Virtual1 "1920x1080_60.00"
+
+
+
+The screen resolution will be ready after 5-10 sn.You can reboot your machine and you can check.
