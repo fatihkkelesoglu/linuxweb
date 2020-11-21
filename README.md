@@ -3,7 +3,7 @@
 Linux Server Management
 
 In this project, I will work on linux system management.These studies will be mostly related to linux web server management.
-I will use Ubuntu 18.04 LTS / Ubuntu 20.04 LTS system for the project.
+I will use Ubuntu 18.04 LTS / Ubuntu 20.04 LTS / CentOS 8 system for the project.
 
 
 Pre-Requitments
