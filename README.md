@@ -10,7 +10,7 @@ Pre-Requitments
 
 - root or who has root authority a user
 - basic firewall
-- Ubuntu 18.04 OS / Ubuntu 20.04 OS
+- Ubuntu 18.04 OS / Ubuntu 20.04 OS / CentOS 8
 
 
 
@@ -29,3 +29,5 @@ Pre-Requitments
 7-How to Install Docker (Ubuntu 20.04)
 
 8-How to Fix Screen Resolution (Ubuntu 20.04)
+
+9-How to Install Docker (CentOS 8)
