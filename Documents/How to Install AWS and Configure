@@ -1,0 +1,43 @@
+# How to Install AWS and Configure on Ubuntu 20.04 #
+
+
+Firstly,you can check with this command that you have AWS on your system or not ;
+
+aws --version
+
+If you don't have AWS on your system,you have to put this command,
+
+apt install awscli
+
+
+After installation,you can check AWS version again on your system and you should see some informations about AWS version
+
+
+After installation,you have to configure about AWS ;
+
+aws configure
+
+
+If you created a new user on AWS , you must have some private informations about your AWS user like AWS Access Key ID,AWS Secret Access Key.
+
+Note : Also,you have to know that which the machine will start on region zone!
+
+
+
+After you put the new user informations,you have to use this command for the password is introduced to the system once
+
+
+chmod 400 fatihkkelesoglu.pem
+
+
+Your pem file name will be different. (You have to get pem file from AWS after create a new virtual machine !
+
+
+Finally,you have to use ssh command for connect ;
+
+
+ssh -i fatihkkelesoglu.pem ec2-user@3.251.92.105
+
+
+Congra! You've connected with your virtual machine.You can see on your terminal screen.
+

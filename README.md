@@ -31,3 +31,5 @@ Pre-Requitments
 8-How to Fix Screen Resolution (Ubuntu 20.04)
 
 9-How to Install Docker (CentOS 8)
+
+10-How to Install AWS and Configure (Ubuntu 20.04)
