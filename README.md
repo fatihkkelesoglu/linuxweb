@@ -29,3 +29,5 @@ Pre-Requitments
 7-How to Install Docker (Ubuntu 20.04)
 
 8-How to Fix Screen Resolution (Ubuntu 20.04)
+
+9-How to Install AWS and Configure (Ubuntu 20.04)
