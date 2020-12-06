@@ -3,14 +3,14 @@
 Linux Server Management
 
 In this project, I will work on linux system management.These studies will be mostly related to linux web server management.
-I will use Ubuntu 18.04 LTS / Ubuntu 20.04 LTS system for the project.
+I will use Ubuntu 18.04 LTS / Ubuntu 20.04 LTS / CentOS 8 system for the project.
 
 
 Pre-Requitments
 
 - root or who has root authority a user
 - basic firewall
-- Ubuntu 18.04 OS / Ubuntu 20.04 OS
+- Ubuntu 18.04 OS / Ubuntu 20.04 OS / CentOS 8
 
 
 
@@ -30,4 +30,6 @@ Pre-Requitments
 
 8-How to Fix Screen Resolution (Ubuntu 20.04)
 
-9-How to Install AWS and Configure (Ubuntu 20.04)
+9-How to Install Docker (CentOS 8)
+
+10-How to Install AWS and Configure (Ubuntu 20.04)
